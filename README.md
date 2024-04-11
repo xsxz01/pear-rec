@@ -15,145 +15,157 @@
 
 ## README
 
-[中文](README.zh-CN.md) | [English](README.md) | [Deutsch](README.de-DE.md)
+[中文](README.md) | [English](README.en.md) | [Deutsch](README.de-DE.md)
 
-## 🧱 Frameworks
+## 📖 简介
 
-The cross-Platform of `pear-rec` is based on `electronjs`, and the front-end is based on `reactjs`. The functions of screenshot, screen recording, recording, recording (dynamic image) gif are a project based on `webrtc` and `webcodecs`.
-
-## 📖 Documentation
-
-> pear-rec(pear rec) is a cross-Platform screenshot, screen recording, audio recording, and video recording software.
+> pear-rec(梨子 rec) 是一个跨平台的截图、录屏、录音、录像、录制(动图)gif、查看图片、查看视频、查看音频和修改图片的软件。
 >
-> pear-rec(pear rec) is a project based on react + electron + vite + viewerjs + plyr + aplayer + react-screenshots.
->
-> More functions and APIs can be found on [the official website(https://027xiguapi.github.io/pear-rec)](https://027xiguapi.github.io/pear-rec) or [https://xiguapi027.gitee.io/pear-rec](https://xiguapi027.gitee.io/pear-rec).
+> 更多功能和 api 可以查看[官网(https://027xiguapi.github.io/pear-rec)](https://027xiguapi.github.io/pear-rec) 或 [https://xiguapi027.gitee.io/pear-rec](https://xiguapi027.gitee.io/pear-rec)
 
-## 🌰 Example
+## 🧱 架构
 
-[web pages](https://pear-rec-xiguapi.vercel.app/)
+> pear-rec(梨子 rec) 的跨平台是基于 `electronjs`,前端是基于 `reactjs`,截图、录屏、录音、录像、录制(动图)gif 等功能是基于 `webrtc` 和 `webcodecs` 的一个项目。
 
-## 🧲 Repository
+## 🌰 例子
+
+[网页](https://pear-rec-xiguapi.vercel.app/)
+
+## 🧲 下载地址
 
 > gitee: https://gitee.com/xiguapi027/pear-rec
 >
 > github: https://github.com/027xiguapi/pear-rec
 
-## 🔨 Usage
+## 🔨 源码运行&编译
 
-### Getting Started
+编译需要`nodejs`和`pnpm`环境
 
-To clone and run this repository you'll need [Git](https://git-scm.com) , [Node.js](https://nodejs.org/en/download/) (which comes with [npm](https://www.npmjs.com/)) and [pnpm](https://pnpm.io/) installed on your computer. From your command line:
+```
+nodejs >= 18
+pnpm: 8
+```
+
+### 开始
 
 ```shell
-# Clone this repository
-git clone https://github.com/027xiguapi/pear-rec.git
-# Go into the repository
+# 拷贝代码
+git clone https://gitee.com/xiguapi027/pear-rec.git
+# 进入项目
 cd pear-rec
-# Install dependencies
+# 安装依赖
 pnpm install
-# Run the web
+# 调试页面
 pnpm run dev:web
-# Run the server
+# 调试服务
 pnpm run dev:server
-# Run the desktop
+# 调试软件
 pnpm run dev:desktop
-# Run the web
+# 运行页面
 pnpm run start:web
-# Run the desktop
+# 运行软件
 pnpm run start:desktop
-# Build the web
-pnpm run build:web
-# Build the desktop
+# 编译软件
 pnpm run build:desktop
-# Clear node_modules
+# 清除 node_modules
 pnpm run clear
 ```
 
-## 🥰 Functions
+## 🥰 功能
 
 <center>
   <img src="https://027xiguapi.github.io/pear-rec/assets/home.7d9162cb.jpg" />
 </center>
 
-Features that have been ticked are the latest in the development process but may not have been released in the latest version
+已经勾选的功能是开发过程最新功能，但可能还没发布在最新版本
 
-- [x] gif(gif.js)
-  - [x] record
-  - [x] edit
-- [x] Screenshot(react-screenshots)
-  - [x] Frame crop
-  - [x] Resizable frame position
-  - [x] Colour picker
-  - [x] Magnifying glass
-  - [x] Brush (freehand brush)
-  - [x] Geometric shapes (border fill support adjustment)
-  - [x] Advanced palette settings
-  - [x] Image filters (local mosaic blur and colour adjustment supported)
-  - [x] Customize what happens when the frame is released
-  - [x] Map search by map
-  - [x] QR code recognition
-  - [ ] Quick full screen capture to clipboard or custom directory
-  - [ ] Screenshot history
-  - [ ] Window and control selection (using OpenCV edge recognition)
-  - [ ] Long screen capture
-  - [ ] Multi-screen
-- [x] Record screen(WebRTC)
-  - [x] Recording full screen
-  - [x] Screenshot
-  - [x] Customize size
-  - [x] Mute
-  - [ ] Key prompt
-  - [ ] Cursor Location Tips
-  - [ ] Recorder bar
-  - [ ] Stream Write
-- [x] Record audio(WebRTC)
-  - [x] Setting
-  - [x] Watch audio
-  - [x] Download audio
-  - [ ] Edit audio
-- [x] Record video(WebRTC)
-  - [ ] Custom bit rate
-- [x] Picture Preview(viewerjs)
-  - [x] Zoom in
-  - [x] Zoom out
-  - [x] Drag
-  - [x] Flip
-  - [x] Pin
-  - [x] Watch local image
-  - [x] Download
-  - [x] Print
+- [x] 动图(gif.js)
+  - [x] 录制
+  - [x] 编辑
+- [x] 截图(react-screenshots)
+  - [x] 框选裁切
+  - [x] 框选大小位置可调整
+  - [x] 取色器
+  - [x] 放大镜
+  - [x] 画笔（自由画笔）
+  - [x] 几何形状（边框填充支持调节）
+  - [x] 高级画板设置
+  - [x] 图像滤镜（支持局部马赛克模糊和色彩调节）
+  - [x] 自定义框选松开后的操作
+  - [x] 以图搜图
+  - [x] 扫描二维码
+  - [ ] 快速截取全屏到剪贴板或自定义的目录
+  - [ ] 截屏历史记录
+  - [ ] 窗口和控件选择（使用 OpenCV 边缘识别）
+  - [ ] 长截屏
+  - [ ] 多屏幕
+- [x] 录屏(WebRTC)
+  - [x] 录制全屏
+  - [x] 截图
+  - [x] 自定义大小
+  - [x] 静音
+  - [ ] 按键提示
+  - [ ] 光标位置提示
+  - [ ] 录制栏
+  - [ ] 流写入
+- [x] 录音(WebRTC)
+  - [x] 录音设置
+  - [x] 查看录音
+  - [x] 下载录音
+  - [ ] 编辑录音
+- [x] 录像(WebRTC)
+  - [ ] 自定义比特率
+- [x] 图片预览(viewerjs)
+  - [x] 放大
+  - [x] 缩小
+  - [x] 拖拽
+  - [x] 翻转
+  - [x] 钉上层
+  - [x] 查看
+  - [x] 下载
+  - [x] 打印
   - [ ] ocr
-  - [x] Watch list
-  - [x] Map search by map
-  - [x] QR code recognition
-- [x] edit image(tui-image-editor)
-- [x] Video Preview(plyr)
-- [x] Audio Previews(aplayer)
-- [x] setting
-  - [x] user uuid
-  - [x] Save address
-  - [x] Self-starting
-  - [x] internationalization(zh,en,de )
+  - [x] 查看列表
+  - [x] 以图搜图
+  - [x] 扫描二维码
+- [x] 图片编辑(tui-image-editor)
+- [x] 视频预览(plyr)
+- [x] 音频预览(aplayer)
+- [x] 基本设置
+  - [x] 用户 uuid
+  - [x] 保存地址
+  - [x] 开机自启动
+  - [x] 国际化(中、英、德)
+  - [x] 服务设置
+  - [ ] 快捷键设置
+  - [ ] 重置设置
 
-## 🌍 Internationalization(I18n)
+## 🌍 国际化(I18n)
 
-- [x] Chinese
-- [x] English
-- [x] German
+- [x] 简体中文
+- [x] 英语
+- [x] 德语
 
 ## 👇 Download
 
-| OS | Windows | Linux | Macos |
+| 系统 | Windows | Linux | Macos |
 | --- | --- | --- | --- |
-| Link | [Download](https://github.com/027xiguapi/pear-rec/releases) | [Download](https://github.com/027xiguapi/pear-rec/releases) | [Download](https://github.com/027xiguapi/pear-rec/releases) |
+| 链接 | [下载](https://github.com/027xiguapi/pear-rec/releases) | [下载](https://github.com/027xiguapi/pear-rec/releases) | [下载](https://github.com/027xiguapi/pear-rec/releases) |
 
-## 👨‍👨‍👦‍👦 Feedback
+国内可以用 [GitHub Proxy](https://ghproxy.com/) 加速下载
 
-We recommend that [issue](https://github.com/027xiguapi/pear-rec/issues) be used for problem feedback.
+## 👨‍👨‍👦‍👦 反馈和交流
 
-## 🤝 License
+我们推荐使用 [issue](https://github.com/027xiguapi/pear-rec/issues) 列表进行最直接有效的反馈，也可以下面的方式
 
-[pear-rec is available under the Apache License V2.](LICENSE)
+- qq 群
 
-[Open source etiquette](https://developer.mozilla.org/en-US/docs/MDN/Community/Open_source_etiquette)
+<p align="center">
+  <img src="https://027xiguapi.github.io/pear-rec/imgs/pear-rec_qq_qrcode.png" />
+</p>
+
+## 🤝 开源协议
+
+[pear-rec(梨子 rec) 可在 Apache License V2 下使用。](LICENSE)
+
+[开源项目礼节](https://developer.mozilla.org/zh-CN/docs/MDN/Community/Open_source_etiquette)

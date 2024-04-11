@@ -15,7 +15,7 @@
 
 ## README
 
-[中文](README.zh-CN.md) | [English](README.md) | [Deutsch](README.de-DE.md)
+[中文](README.md) | [English](README.en.md) | [Deutsch](README.de-DE.md)
 
 ## Dokumentation
 
